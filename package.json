@@ -1,0 +1,14 @@
+{
+  "name": "team",
+  "version": "1.0.0",
+  "description": "Team development guidelines and process documentation.",
+  "author": "Albert Martin <albert@imor.tl>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gitbook serve"
+  },
+  "devDependencies": {
+    "gitbook": "^3.2.2",
+    "gitbook-cli": "^2.3.0"
+  }
+}
