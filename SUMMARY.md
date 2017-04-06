@@ -32,6 +32,11 @@
 * [Documentation](contributing/DOCUMENTATION.md)
 * [Testing](contributing/TESTING.md)
 
+### Guides
+
+* [Release process](guides/RELEASES.md)
+    * [iOS apps](guides/RELEASES.md#ios)
+
 ----
 
 * [GitHub templates](.github/README.md)
