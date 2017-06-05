@@ -1,5 +1,4 @@
-GIT
-==
+# GIT
 
 All code developed for our projects must be tracked in version control through
 GIT. With the exception of generic components that we choose to
@@ -7,7 +6,7 @@ GIT. With the exception of generic components that we choose to
 GitHub account. Even so, care should be taken against committing any credentials
 or potentially sensitive information.
 
-#### Branching
+## Branching
 
 Projects follow the GIT Flow branching model, with development being performed
 on named branches. When a feature is complete, a pull request is opened in
@@ -39,7 +38,7 @@ narrow vertical slice of complete functionality. Refactoring neighboring code or
 fixing bugs should happen on their own branch unless they are directly required
 for the feature work being performed.
 
-#### Commit message format
+## Commit message format
 
 We follow Google's Commit Message Guidelines to maintain consistent and more
 readable commit messages that are easier to follow when looking through the

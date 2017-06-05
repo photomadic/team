@@ -1,8 +1,6 @@
-Release Process
-==
+# Release Process
 
-
-#### iOS
+## iOS
 
 All iOS releases are done using an Enterprise developer account which means that
 we don't push directly to the App Store. However, the release process is very

@@ -1,5 +1,4 @@
-Backlog
-==
+# Backlog
 
 The backlog for each project is managed directly in GitHub. All stories are represented through [Issues](https://guides.github.com/features/issues/) and linked [Tasks](https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments) in Github and are managed in task boards through Zenhub to better represent the stage of each story in the release cycle.
 
@@ -21,7 +20,7 @@ An [Issue Template](../.github/ISSUE_TEMPLATE.md) has been included in this repo
 
 Before work on a feature can begin, it must be thoroughly defined with at least the following:
 
-* **Feature title** A feature title should include the common persona, requested feature, and a "so that" which describes the value this feature delivers to either the persona or the business: _"As a <user type>, I want <a goal> so that <benefit>."_
+* **Feature title** A feature title should include the common persona, requested feature, and a "so that" which describes the value this feature delivers to either the persona or the business: _"As a [user type], I want [a goal] so that [benefit]."_
 
 * **Context** Context is one of the most important parts of the feature and should be sufficiently detailed so that anyone reviewing the story knows the "Why". This is not another format for specifications or requirements. Rather, it should help to explain both the motivation for creating the issue and what is a valuable _outcome_ for the user.
 

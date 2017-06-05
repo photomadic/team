@@ -1,5 +1,4 @@
-Solution architecture
-==
+# Solution architecture
 
 Specific architecture decisions will be documented in their corresponding
 repositories. With that said, we will generally use the following technologies:
@@ -16,7 +15,7 @@ Following best practices, all applications store sensitive configuration in the
 environment and not the codebase. Local configuration can generally be specified
 in `config/local.js` which is excluded from GIT.
 
-#### Logging and metrics
+## Logging and metrics
 
 [Winston](http://GitHub.com/winstonjs/winston) is used to declare various levels
 of verbosity in the log output. In production, only `info` level and above will
@@ -34,7 +33,7 @@ when the exception occurred.
 metrics from applications running in production. In addition, it will serve as
 uptime monitor and emergency alerts in the case of an issue in production.
 
-#### Deployment
+## Deployment
 
 [Heroku](https://www.heroku.com) is used for all production applications, QA
 environments, and review apps. Each application will be configured in a [Pipeline](https://devcenter.heroku.com/articles/pipelines). This ensures that

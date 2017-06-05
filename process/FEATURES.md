@@ -1,5 +1,4 @@
-Feature development
-==
+# Feature development
 
 Feature development happens on independent branches using the Git Flow style of
 branching and include both automated and manual tests before staging, review,

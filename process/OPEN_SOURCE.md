@@ -1,5 +1,4 @@
-Open source
-==
+# Open source
 
 Our team will actively use and contribute to existing open source projects in
 our application development. In fact, we want to run our team and develop each
