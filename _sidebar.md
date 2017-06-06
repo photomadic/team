@@ -9,10 +9,13 @@
 
 - Contributing
   - [Introduction](contributing/README.md)
-  - [Code style](contributing/CODE_STYLE.md)
   - [GIT](contributing/GIT.md)
   - [Documentation](contributing/DOCUMENTATION.md)
   - [Testing](contributing/TESTING.md)
+
+- Code Style
+  - [Introduction](style/README.md)
+  - [CSS and Styling](style/CSS.md)
 
 - Guides
   - [Release process](guides/RELEASES.md)
