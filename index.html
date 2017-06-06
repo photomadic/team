@@ -19,12 +19,12 @@
     plugins: [
       function(hook) {
         hook.beforeEach(function (html) {
-          return html += '> Last modified {docsify-updated}'
+          return html += '\r\n---\r\n_Last modified {docsify-updated}_'
         })
       }
     ],
     repo: 'photomadic/team',
-    subMaxLevel: 2,
+    subMaxLevel: 3,
   }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
