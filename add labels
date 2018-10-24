@@ -1,0 +1,122 @@
+// go to repo labels page
+// open browser console
+// paste the following and hit enter! :) 
+
+[
+  {
+    "name": "needs: backend",
+    "description": "issues that requires backend task",
+    "color": "e5e234"
+  },
+  {
+    "name": "needs: frontend",
+    "description": "issues that require frontend tasks",
+    "color": "e5e234"
+  },
+  {
+    "name": "needs: UI",
+    "description": "issues that require UI tasks",
+    "color": "e5e234"
+  },
+  {
+    "name": "scope: analytics",
+    "description": "issues related to analytics",
+    "color": "000000"
+  },
+  {
+    "name": "scope: api",
+    "description": "issues related to api",
+    "color": "000000"
+  },
+  {
+    "name": "scope: branding",
+    "description": "issues related to branding kit",
+    "color": "000000"
+  },
+  {
+    "name": "scope: dashboard",
+    "description": "issues related to dashboard",
+    "color": "000000"
+  },
+  {
+    "name": "scope: gallery",
+    "description": "issues related to web gallery",
+    "color": "000000"
+  },
+  {
+    "name": "scope: leads",
+    "description": "issues related to leads",
+    "color": "000000"
+  },
+  {
+    "name": "scope: roam app",
+    "description": "issues related solely to roam app",
+    "color": "000000"
+  },
+  {
+    "name": "scope: sharing",
+    "description": "issues related to sharing kit",
+    "color": "000000"
+  },
+  {
+    "name": "scope: wave app",
+    "description": "issues related to solely to wave app",
+    "color": "000000"
+  },
+  {
+    "name": "type: architecture",
+    "description": "improvements and additions to backend",
+    "color": "00eacc"
+  },
+  {
+    "name": "type: design",
+    "description": "solely a design issue/feature",
+    "color": "00eacc"
+  },
+  {
+    "name": "type: feature-macro",
+    "description": "an entirely new feature or user experience",
+    "color": "00eacc"
+  },
+  {
+    "name": "type: feature-micro",
+    "description": "any feature that enhances an existing feature",
+    "color": "00eacc"
+  },
+  {
+    "name": "type: fix",
+    "description": "bugs and obvious fixes that need to be addressed",
+    "color": "ee0701"
+  }
+]
+.forEach(function(label) {
+  addLabel(label)
+})
+
+function updateLabel (label) {
+  var flag = false;
+  [].slice.call(document.querySelectorAll(".labels-list-item"))
+  .forEach(function(element) {
+    if (element.querySelector('.label-link').textContent.trim() === label.name) {
+      flag = true
+      element.querySelector('.js-edit-label').click()
+      element.querySelector('.js-new-label-name-input').value = label.name
+      element.querySelector('.js-new-label-description-input').value = label.description
+      element.querySelector('.js-new-label-color-input').value = '#' + label.color
+      element.querySelector('.js-edit-label-cancel ~ .btn-primary').click()
+    }
+  })
+  return flag
+}
+
+function addNewLabel (label) {
+  document.querySelector('.js-new-label-name-input').value = label.name
+  document.querySelector('.js-new-label-description-input').value = label.description
+  document.querySelector('.js-new-label-color-input').value = '#' + label.color
+  document.querySelector('.js-details-target ~ .btn-primary').disabled = false
+  document.querySelector('.js-details-target ~ .btn-primary').click()
+}
+
+function addLabel (label) {
+  if (!updateLabel(label)) addNewLabel(label)
+}
